@@ -1,4 +1,11 @@
 /********** Template CSS **********/
+@import url("https://fonts.googleapis.com/css?family=Poppins:400,400i,700");
+
+body{
+  font-family: "Poppins", sans-serif;
+}
+
+
 :root {
     --primary: #0463FA;
     --light: #EFF5FF;
@@ -516,4 +523,118 @@
 
 .footer .copyright a:hover {
     color: var(--primary);
+}
+
+/* ////////////////// */FAQ
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "WorkSans";
+}
+
+#id1{
+    background-attachment: fixed;
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-color: hsl(275, 100%, 97%);
+    display: grid;
+    place-content: center;
+    min-height: 100vh;
+    font-size: 1rem;
+    line-height: 1.5rem;
+}
+
+img, svg{
+    max-width: 100%;
+}
+
+.button:hover{
+    color: rgb(10, 32, 235);
+}
+
+#card{
+    margin: auto;
+    background-color: white;
+    padding: 1.5rem;
+    max-width: 90%;
+    border-radius: 10px;
+    margin-bottom: 1rem;
+}
+
+#card-header{
+    margin-bottom: 2rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+#card-header > img{
+    width: 40px;
+    margin-right: 1.5rem;
+}
+
+h1{
+    color: hsl(292, 42%, 14%);
+    font-size: 3rem;
+}
+
+.card-item{
+    padding: 1rem 0;
+}
+
+.card-item:not(:last-child){
+    border-bottom: solid 2px hsl(275, 100%, 97%);
+}
+
+.card-item-btn{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 1rem;
+    font-weight: 700;
+    color: hsl(292, 42%, 14%);
+    width: 100%;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    text-align: left;
+}
+
+.icons > img{
+    min-width: 30px;
+}
+
+.minus-icon{
+    display: none;
+}
+
+.card-item-description{
+    font-size: 1rem;
+    color: hsl(292, 16%, 49%);
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 200ms ease;
+}
+div.c{
+  position: relative;
+  margin:2em;
+}
+input{
+  position: absolute;
+  left: 0;
+  top: 0;
+  /* height: 100%; */
+max-width: 100%;
+  opacity:0;
+  visibility: 0;
+}
+h1{
+  background:steelblue;
+  color:white;
+  padding:1em;
+  position: relative;
 }
